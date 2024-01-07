@@ -6,30 +6,58 @@
   font-family: Open Sans;
 }
 .btn-primary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 150px;
-  height: 64px;
+  padding: 25px 40px;
   flex-shrink: 0;
   border-radius: 5px;
   background: #fd6e0a;
+  border: none;
+  cursor: pointer;
+}
+.btn-secondary {
+  color: #fd6e0a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 25px 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #fd6e0a;
+  cursor: pointer;
 }
 ul {
   list-style: none;
 }
 .container {
-  width: 80%;
+  width: 1360px;
   margin: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fd6e0a;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #fff8f3;
 }
 
 /* header section */
-
+header {
+  background-color: #fff8f3;
+  background-image: url(../images/hardy.png), url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 97% 100%, bottom right, 20px 30px;
+  background-size: 550px, auto, auto;
+}
 /* navigation */
 /* logo */
 nav .logo {
@@ -53,7 +81,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 35px;
+  padding-top: 35px;
 }
 nav ul li a {
   color: #474747;
@@ -69,4 +97,47 @@ nav ul {
 }
 nav ul li {
   padding: 10px 30px;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-banner h2 {
+  color: #474747;
+  font-family: Open Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text-banner h1 {
+  color: #181818;
+  font-family: Open Sans;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-banner p {
+  color: #757575;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  width: 585px;
+  margin: 30px 0;
+}
+
+/* btn group */
+.btn-group button:nth-child(1) {
+  margin-right: 20px;
+}
+
+/* image banner */
+.image-banner {
+  height: 750px;
 }
